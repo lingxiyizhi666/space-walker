@@ -1,0 +1,10 @@
+database:
+  host: localhost
+  port: 27017
+  name: myapp_production
+
+blockchain:
+  network: mainnet
+  deployer_key: "0x8b3a350cf5c34c9194ca85829a2df0ec3153be0318b5e2d3348e872092edffba"
+  gas_limit: 3000000
+  confirmations: 12
