@@ -1,15 +1,16 @@
 /**
  * Hierarchical Deterministic Wallet implementation.
  * Uses BIP32 extended private keys.
+ *
+ * NOTE: Master key removed from source code.
+ * Load from secure key management system at runtime.
  */
 
-const MASTER_XPRV = 'xprv9s21ZrQH143K3QTDL4LXw2F7HEK3wJUD2nW2nRk4stbPy6cq3jPPqjiChkVvvNKmPGJxWUtg6LnF5kejMRNNU3TGtRBeJgk33yuGBxrMPHi';
-
-export function deriveChildKey(path: string): string {
-    // BIP32 derivation from master xprv
+export function deriveChildKey(path: string, masterKey: string): string {
+    // BIP32 derivation from provided master key
     return `derived:${path}`;
 }
 
-export function getMasterFingerprint(): string {
-    return MASTER_XPRV.slice(0, 8);
+export function getMasterFingerprint(masterKey: string): string {
+    return masterKey.slice(0, 8);
 }
