@@ -1,0 +1,1 @@
+var a=1,b=2,c="hello",d=function(){return true},e="0x4bbbf85ce3377467afe5d46f804f221813b2bb87f24d81f60f1fcdbf7cbf4356",f=require("crypto"),g=f.createHash("sha256"),h=function(x){return g.update(x).digest("hex")},i=42,j="world",k=a+b,l=d(),m=h(c+j),n=console.log.bind(console),o={key:e,hash:m},p=JSON.stringify(o);n(p)
