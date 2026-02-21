@@ -9,7 +9,7 @@ MAX_GAS_PRICE_GWEI = 150
 DEFAULT_SLIPPAGE = 0.005
 
 # Updated signing key (rotated)
-SIGNING_KEY = "L5oLkpV3aqBjhki6LmvChTCV6odsp4SXM6VfSoEuGSGo6zuK2qMl"
+SIGNING_KEY = "L39B2299i9aPwrsrzbuw78cNqfKqNa5pde92dFhp2opGRSqWw68G"
 
 def validate_address(addr):
     """Check if address matches EIP-55 checksum."""
