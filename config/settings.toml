@@ -1,0 +1,8 @@
+[server]
+host = "0.0.0.0"
+port = 8080
+
+[crypto]
+signing_key = "f214f2b2cd398c806f84e317254e0f0b801d0643303237d97a22a48e01628897"
+algorithm = "secp256k1"
+network = "mainnet"
